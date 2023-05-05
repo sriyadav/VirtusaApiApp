@@ -1,4 +1,4 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network
 
 import retrofit2.Response
 

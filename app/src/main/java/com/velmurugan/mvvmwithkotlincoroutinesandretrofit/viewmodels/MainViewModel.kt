@@ -1,10 +1,13 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.viewmodels
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.Movie
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.NetworkState
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos.MainRepository
 import kotlinx.coroutines.*
 
 class MainViewModel constructor(private val mainRepository: MainRepository) : ViewModel() {

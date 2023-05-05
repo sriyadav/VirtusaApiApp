@@ -1,4 +1,8 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos
+
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.Movie
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.NetworkState
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.RetrofitService
 
 class MainRepository constructor(private val retrofitService: RetrofitService) {
 

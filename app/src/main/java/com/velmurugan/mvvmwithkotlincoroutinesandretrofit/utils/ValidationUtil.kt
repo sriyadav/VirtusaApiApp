@@ -1,4 +1,6 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.utils
+
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.Movie
 
 object ValidationUtil {
 

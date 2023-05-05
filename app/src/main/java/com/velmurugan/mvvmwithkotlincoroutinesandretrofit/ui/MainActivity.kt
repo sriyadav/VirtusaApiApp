@@ -1,4 +1,4 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,12 +6,17 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.viewmodels.MainViewModel
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.MovieAdapter
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.helpers.MyViewModelFactory
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.RetrofitService
 import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.databinding.ActivityMainBinding
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos.MainRepository
 
 class MainActivity : AppCompatActivity() {
-    lateinit var viewModel: MainViewModel
+   private lateinit var viewModel: MainViewModel
     private val adapter = MovieAdapter()
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

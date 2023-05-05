@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.databinding.AdapterMovieBinding
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.utils.ValidationUtil
 
 class MovieAdapter : RecyclerView.Adapter<MainViewHolder>() {
 
-    var movieList = mutableListOf<Movie>()
+  private  var movieList = mutableListOf<Movie>()
 
     fun setMovies(movies: List<Movie>) {
         this.movieList = movies.toMutableList()

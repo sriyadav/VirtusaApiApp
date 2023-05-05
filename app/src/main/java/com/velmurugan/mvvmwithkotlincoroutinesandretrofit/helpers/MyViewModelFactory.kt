@@ -1,7 +1,9 @@
-package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
+package com.velmurugan.mvvmwithkotlincoroutinesandretrofit.helpers
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos.MainRepository
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.viewmodels.MainViewModel
 
 class MyViewModelFactory constructor(private val repository: MainRepository): ViewModelProvider.Factory {
 
