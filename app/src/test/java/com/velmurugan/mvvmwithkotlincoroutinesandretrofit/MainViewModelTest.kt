@@ -1,9 +1,14 @@
 package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.NetworkState
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.RetrofitService
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos.MainRepository
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.viewmodels.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.setMain
 import org.junit.Assert.*
@@ -16,14 +21,13 @@ import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.Mockito.mock
 import org.mockito.MockitoAnnotations
-import retrofit2.Response
 
 @ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
 class MainViewModelTest {
 
 
-    private val testDispatcher = TestCoroutineDispatcher()
+    private val testDispatcher = StandardTestDispatcher()
     lateinit var mainViewModel: MainViewModel
 
     lateinit var mainRepository: MainRepository

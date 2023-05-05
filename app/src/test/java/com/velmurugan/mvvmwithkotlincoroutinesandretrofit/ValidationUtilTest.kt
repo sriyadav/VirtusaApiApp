@@ -1,5 +1,6 @@
 package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
 
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.utils.ValidationUtil
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -1,15 +1,14 @@
 package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
 
 import com.google.gson.Gson
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.RetrofitService
 import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
-import org.hamcrest.MatcherAssert.assertThat
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mock
 import org.mockito.MockitoAnnotations
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

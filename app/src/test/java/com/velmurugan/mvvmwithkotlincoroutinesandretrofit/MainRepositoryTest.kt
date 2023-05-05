@@ -1,5 +1,8 @@
 package com.velmurugan.mvvmwithkotlincoroutinesandretrofit
 
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.NetworkState
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.network.RetrofitService
+import com.velmurugan.mvvmwithkotlincoroutinesandretrofit.repos.MainRepository
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Before
